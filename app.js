@@ -5,5 +5,5 @@ const username = process.argv[2]; //Username have to be passed as second argumen
 github.getRepos(username, (error, repos = []) => {
   if (error) console.error(`Ошибка: ${error.message}`);
 
-repos.forEach(repo => console.log(repo.name));
+  repos.forEach(repo => console.log(repo.name));
 });
